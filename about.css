@@ -1,0 +1,160 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #111827;
+    padding-top: 40px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 12px 25px;
+    display: block;
+    transition: 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar nav ul li a:hover {
+    background: #1f2937;
+    color: #fff;
+    border-left: 3px solid #3b82f6;
+}
+
+/* Main Content */
+.main {
+    margin-left: 240px;
+    padding: 60px 40px;
+    width: 100%;
+}
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Education Title */
+.about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #3b82f6;
+}
+
+/* Education Card */
+.education-container {
+    display: flex;
+}
+
+.edu-card {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 5px solid #3b82f6;
+}
+
+.edu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Card Content */
+.edu-card h4 {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 10px;
+}
+
+.edu-card p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+
+    .education-container {
+        flex-direction: column;
+    }
+}
+/* Interest Section */
+.interest-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.interest-card {
+    background: #ffffff;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    color: #111827;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.interest-card:hover {
+    background: #3b82f6;
+    color: #fff;
+    transform: translateY(-5px);
+}

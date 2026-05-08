@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #111827;
+    padding-top: 40px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 12px 25px;
+    display: block;
+    transition: 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar ul li a:hover {
+    background: #1f2937;
+    color: #fff;
+    border-left: 3px solid #3b82f6;
+}
+
+/* Main */
+.main {
+    margin-left: 240px;
+    padding: 60px 40px;
+    width: 100%;
+}
+
+/* Heading */
+.main h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #111827;
+}
+
+/* Project Grid */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Project Card */
+.project-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-top: 5px solid #3b82f6;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: #3b82f6;
+    color: #fff;
+}
+
+/* Text */
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.project-card:hover p {
+    color: #e0e7ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+}
+
+/* Project Links */
+.project-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.project-links a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: #3b82f6;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.project-links a:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+/* When card is hovered */
+.project-card:hover .project-links a {
+    background: #fff;
+    color: #3b82f6;
+}
